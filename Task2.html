@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link JS file to HTML file -->
+    <script src="script.js"></script>
+</head>
+<body>
+    <label for="num1">Number 1:</label>
+    <input type="text" id="num1" onblur="validateNumber(this)">
+    <span id="num1Error" style="color: red;"></span><br>
+
+    <label for="num2">Number 2:</label>
+    <input type="text" id="num2" onblur="validateNumber(this)">
+    <span id="num2Error" style="color: red;"></span><br>
+
+    <button onclick="performOperation('+')">Addition</button>
+    <button onclick="performOperation('-')">Subtraction</button>
+    <button onclick="performOperation('*')">Multiplication</button>
+    <button onclick="performOperation('/')">Division</button>
+
+    <label id="msg"></label>
+
+</body>
+
+</html>
