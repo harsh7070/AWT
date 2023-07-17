@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SignUp</title>
+</head>
+<body>
+    <form class="center-form">
+        <div class="content">
+  <label for="fname">Full Name</label>
+  <input type="text" id="fname" name="fname"><br>
+  <div id="fname-val"></div><br>
 
+  <label for="uname">Username</label>
+  <input type="text" id="uname" name="uname"><br>
+  <div id="uname-val"></div><br>
+
+  <label for="password">Password</label>
+  <input type="password" id="pass" name="password"><br>
+  <div id="pass-val"></div><br>
+
+  <label for="cpassword">Confirm Password</label>
+  <input type="password" id="cpass" name="cpassword"><br>
+  <div id="cpass-val"></div><br>
+  
+  <label for="gender">Gender</label><br>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br><br>
+
+  <label for="phone">Phone No.</label>
+  <input type="tel" id="phone" name="phone"><br>
+  <div id="phone-val"></div><br>
+
+  <label for="email">Email</label>
+  <input type="text" id="email" name="email"><br><br>
+  <label for="state">State</label>
+  <select id="state" name="state">
+    <option value="">Select State</option>
+    <option value="">Gujarat</option>
+    <option value="">Maharashtra</option>
+    <option value="">Rajasthan</option>
+    <option value="">Punjab</option>
+    <option value="">Haryana</option>
+    <option value="">Uttar Pradesh</option>
+    <option value="">Madhya Pradesh</option>
+    <option value="">Karnataka</option>
+    <option value="">Tamil Nadu</option>
+    <option value="">Kerala</option>    
+  </select><br><br>  
+  <input type="checkbox" id="agreement" name="agreement">
+  <label for="agreement">You Agree With Agreement</label><br><br>  
+  <input type="submit" onclick="validateFields" value="Register">
+</div>
+</form> 
+<script src="validation.js"></script>
+</body>
+</html>
